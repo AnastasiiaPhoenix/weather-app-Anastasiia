@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Weather app</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz@8..144&family=Rubik&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/274b496240.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+          <h1>
+            Weather app
+          </h1>
+        </div>
+        <div class="col-6">
+          <form class="citysearch">
+            <label>Search</label>
+            <br />
+            <input
+              type="search"
+              name="search"
+              id="input-city"
+              placeholder="Enter your city"
+            />
+            <button class="btn btn-primary" type="submit">Go!</button>
+          </form>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-4">
+          <h2 id="user-city">
+            Zaporizhzhia
+          </h2>
+          <h3>
+            <span id="main-temp">23</span>
+            <span>°C</span>
+          </h3>
+        </div>
+        <div class="col-4">
+          <i class="fa-solid fa-cloud-rain light-rain"></i>
+        </div>
+        <div class="col-4">
+          <h3 id="date">
+            Sunday
+            <br />
+            18:00
+            <br />
+            Light rain
+            <br />
+          </h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <p>
+            <strong>Monday</strong>
+            <br />
+            +19°C
+            <br />
+            +28°C
+            <br />
+            <i class="fa-solid fa-cloud-sun-rain sun-rain"></i>
+          </p>
+        </div>
+        <div class="col">
+          <p>
+            <strong>Tuesday</strong>
+            <br />
+            +20°C
+            <br />
+            +29°C
+            <br />
+            <i class="fa-solid fa-cloud-bolt cloud-bolt"></i>
+          </p>
+        </div>
+        <div class="col">
+          <p>
+            <strong>Wednesday</strong>
+            <br />
+            +20°C
+            <br />
+            +30°C
+            <br />
+            <i class="fa-solid fa-cloud-sun cloud-sun"></i>
+          </p>
+        </div>
+        <div class="col">
+          <p>
+            <strong>Thursday</strong>
+            <br />
+            +18°C
+            <br />
+            +29°C
+            <br />
+            <i class="fa-regular fa-sun fa-sun"></i>
+          </p>
+        </div>
+        <div class="col">
+          <p>
+            <strong>Friday</strong>
+            <br />
+            +21°C
+            <br />
+            +33°C
+            <br />
+            <i class="fa-solid fa-sun sun"></i>
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

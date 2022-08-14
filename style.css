@@ -1,0 +1,55 @@
+body {
+  background: lightskyblue;
+    font-family: "Roboto Serif", serif;
+    font-family: "Rubik", sans-serif;
+    padding: 0 20px;
+  }
+  .container {
+    background: rgb(156, 205, 235);
+    margin: 0 auto;
+    margin-top: 60px;
+  }
+  .row {
+    margin: 0 auto;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0 0 24px;
+  }
+  h1 {
+    color: darkblue;
+    text-align: left;
+    font-weight: 900;
+    font-size: 34px;
+    line-height: 48px;
+    margin-left: -15px;
+    padding: 15px;
+  }
+  h2 {
+    font-weight: bold;
+  }
+  form {
+    position: fixed;
+  }
+  .light-rain {
+    color: darkblue;
+    font-size: 90px;
+  }
+  .sun-rain {
+    color: darkblue;
+  }
+  .cloud-bolt {
+    color: darkblue;
+  }
+  .cloud-sun {
+    color: darkblue;
+  }
+  .fa-sun {
+    color: goldenrod;
+  }
+  .col {
+    text-align: center;
+  }
+  .col-4 {
+    text-align: center;
+  }
+  
