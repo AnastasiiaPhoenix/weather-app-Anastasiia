@@ -33,14 +33,14 @@ function formatDate(date) {
     document.querySelector("#main-temp").innerHTML = Math.round(
       response.data.main.temp
     );
-    document.querySelector("#wind").innerHTML = responce.data.wind.speed;
-  document.querySelector("#humidity").innerHTML = responce.data.main.humidity;
+    document.querySelector("#wind").innerHTML = response.data.wind.speed;
+  document.querySelector("#humidity").innerHTML = response.data.main.humidity;
   document.querySelector("#current-description").innerHTML =
-    responce.data.weather[0].description;
+    response.data.weather[0].description;
   let currentIcon = document.querySelector("#current-icon");
   currentIcon.setAttribute(
     "src",
-    `http://openweathermap.org/img/wn/${responce.data.weather[0].icon}@2x.png`
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
   }
   function searchCity(city) {
