@@ -27,17 +27,26 @@ function formatDate(date) {
   currentDate.innerHTML = formatDate(currentTime);
   
   //
-  function showTemperature(response) {
+  function showWeather(response) {
     console.log(response.data);
     document.querySelector("#user-city").innerHTML = response.data.name;
     document.querySelector("#main-temp").innerHTML = Math.round(
       response.data.main.temp
     );
+    document.querySelector("#wind").innerHTML = responce.data.wind.speed;
+  document.querySelector("#humidity").innerHTML = responce.data.main.humidity;
+  document.querySelector("#current-description").innerHTML =
+    responce.data.weather[0].description;
+  let currentIcon = document.querySelector("#current-icon");
+  currentIcon.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${responce.data.weather[0].icon}@2x.png`
+  );
   }
   function searchCity(city) {
     let apiKey = "f5f2cd381e5593f6659618e002cc4ae6";
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
-    axios.get(apiUrl).then(showTemperature);
+    axios.get(apiUrl).then(showWeather);
   }
   
   function search(event) {
@@ -54,7 +63,7 @@ function formatDate(date) {
     let longitude = position.coords.longitude;
     let apiKey = "f5f2cd381e5593f6659618e002cc4ae6";
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
-    axios.get(apiUrl).then(showTemperature);
+    axios.get(apiUrl).then(showWeather);
   }
   function getCurrentPosition(event) {
     event.preventDefault();
