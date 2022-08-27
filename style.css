@@ -1,5 +1,4 @@
 body {
-  background: lightskyblue;
     font-family: "Roboto Serif", serif;
     font-family: "Rubik", sans-serif;
     padding: 0 20px;
@@ -30,26 +29,18 @@ body {
   form {
     position: fixed;
   }
-  .light-rain {
-    color: darkblue;
-    font-size: 90px;
-  }
-  .sun-rain {
-    color: darkblue;
-  }
-  .cloud-bolt {
-    color: darkblue;
-  }
-  .cloud-sun {
-    color: darkblue;
-  }
-  .fa-sun {
-    color: goldenrod;
-  }
-  .col {
-    text-align: center;
-  }
-  .col-4 {
-    text-align: center;
-  }
-  
+.weather-forecast {
+  margin-top: 20px;
+  text-align: center;
+  color: black;
+}
+.weather-forecast-date {
+  font-size: 20px;
+  opacity: 0.5;
+}
+.weather-forecast-temperature-min {
+  opacity: 0.5;
+}
+.weather-forecast-temperatures {
+font-size: 16px;
+}
